@@ -1,12 +1,12 @@
 
 import React from 'react';
-import logo from 'https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_hybrid'; 
+import Logo from 'logo.png'; 
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-10 w-10 mr-2" />
+        <img src={"C:\Users\Admin\my-project1\src\Components\logo.png"} alt="Logo" className="h-10 w-10 mr-2" />
         <h1 className="text-xl font-bold">Your Company</h1>
       </div>
       <nav className="flex space-x-4">
