@@ -13,9 +13,9 @@ const Header = () => {
         <h1 className="text-2xl font-bold">FusionBazaar</h1>
       </div>
       <nav className="flex space-x-4">
-        <Link to="/" className="hover:text-gray-400">Home</Link> {/* Updated to use Link */}
-        <Link to="/about" className="hover:text-gray-400">About Us</Link>
-        <Link to="/services" className="hover:text-gray-400">Services</Link>
+        <Link to="/" className="hover:text-gray-400 text-xl">Home</Link> 
+        <Link to="/aboutus" className="hover:text-gray-400 text-xl ">AboutUs</Link>
+        <Link to="/services" className="hover:text-gray-400 text-xl">Services</Link>
       </nav>
       <div className="flex space-x-4">
         <Link to="/login"> 
@@ -23,9 +23,7 @@ const Header = () => {
             Login
           </button>
         </Link>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-          New Registration
-        </button>
+        
       </div>
     </header>
   );
