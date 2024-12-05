@@ -1,7 +1,7 @@
 // src/Components/Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../ThemeContext';// Import the useTheme hook
+import { useTheme } from '../ThemeContext'; // Import the useTheme hook
 
 const Header = () => {
     const { toggleTheme } = useTheme(); // Get the toggleTheme function
@@ -23,7 +23,7 @@ const Header = () => {
             </nav>
             <div className="flex space-x-4">
                 <button onClick={toggleTheme} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-                    Mode
+                    Toggle Theme
                 </button>
                 <Link to="/login">
                     <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
