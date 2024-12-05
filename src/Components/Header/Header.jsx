@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-
+import { Link } from 'react-router-dom'; 
 const Header = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">

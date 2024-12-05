@@ -43,7 +43,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center h-screen'>
       {isLoggedIn ? (
         <div>
           <h2>Welcome, {username}!</h2>
@@ -53,7 +53,7 @@ const Login = () => {
         <div>
           <button 
             onClick={() => setIsLoginFormVisible(!isLoginFormVisible)} 
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded "
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded  "
           >
             Login
           </button>
@@ -66,21 +66,21 @@ const Login = () => {
 
           {isLoginFormVisible && (
             <form onSubmit={handleLogin} className="mt-4">
-              <h2>Login</h2>
+              <h2 className='text-center text-2xl font-bold'>Login</h2>
               <div>
-                <label>
+                <label className='text-center gap-2'>
                   Email:
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="border border-gray-400 p-1 text-black"
+                    className=" space-y-2 border rounded-md border-gray-400 p-1 text-black"
                   />
                 </label>
               </div>
               <div>
-                <label>
+                <label className='text-center gap-2'>
                   Username:
                   <div className="relative">
                     <input
@@ -88,11 +88,11 @@ const Login = () => {
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
                       required
-                      className="border border-gray-400 p-1 text-black"
+                      className="space-y-2 border rounded-md border-gray-400 p-1 text-black"
                     />
                     <span 
                       onClick={() => setShowUsername(!showUsername)} 
-                      className="absolute right-2 top-2 cursor-pointer"
+                      className="absolute right-1 top-2 cursor-pointer"
                     >
                       {showUsername ? <FaEyeSlash /> : <FaEye />}
                     </span>
@@ -100,7 +100,7 @@ const Login = () => {
                 </label>
               </div>
               <div>
-                <label>
+                <label className='text-center gap-2'>
                   Password:
                   <div className="relative">
                     <input
@@ -108,11 +108,11 @@ const Login = () => {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       required
-                      className="border border-gray-400 p-1 text-black"
+                      className="space-y-2 border rounded-md border-gray-400 p-1 text-black"
                     />
                     <span 
                       onClick={() => setShowPassword(!showPassword)} 
-                      className="absolute right-2 top-2 cursor-pointer"
+                      className="absolute  right-1 top-2 cursor-pointer"
                     >
                       {showPassword ? <FaEyeSlash /> : <FaEye />}
                     </span>
@@ -120,7 +120,7 @@ const Login = () => {
                 </label>
               </div>
               {error && <p style={{ color: 'red' }}>{error}</p>}
-              <button type="submit" className="bg-blue-500 hover:bg-blue- 600 text-white font-bold py-2 px-4 rounded">
+              <button type="submit" className="mt-4 bg-blue-500 hover:bg-blue- 600 text-white font-bold py-2 px-4 rounded">
                 Login
               </button>
             </form>
@@ -128,7 +128,7 @@ const Login = () => {
 
           {isRegistrationFormVisible && (
             <form onSubmit={handleRegistration} className="mt-4">
-              <h2>Register</h2>
+              <h2 className='text-center text-2xl font-bold'>Register</h2>
               <div>
                 <label>
                   Email:
@@ -137,12 +137,12 @@ const Login = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="border border-gray-400 p-1 text-black"
+                    className="space-y-2 border rounded-md border-gray-400 p-1 text-black"
                   />
                 </label>
               </div>
               <div>
-                <label>
+                <label className='text-center gap-2'>
                   Username:
                   <div className="relative">
                     <input
@@ -150,11 +150,11 @@ const Login = () => {
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
                       required
-                      className="border border-gray-400 p-1 text-black"
+                      className="space-y-2 border rounded-md border-gray-400 p-1 text-black"
                     />
                     <span 
                       onClick={() => setShowUsername(!showUsername)} 
-                      className="absolute right-2 top-2 cursor-pointer"
+                      className="absolute right-1 top-2 cursor-pointer"
                     >
                       {showUsername ? <FaEyeSlash /> : <FaEye />}
                     </span>
@@ -162,7 +162,7 @@ const Login = () => {
                 </label>
               </div>
               <div>
-                <label>
+                <label className='text-center gap-2'>
                   Password:
                   <div className="relative">
                     <input
@@ -170,18 +170,18 @@ const Login = () => {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       required
-                      className="border border-gray-400 p-1 text-black"
+                      className="space-y-2 border rounded-md border-gray-400 p-1 text-black"
                     />
                     <span 
                       onClick={() => setShowPassword(!showPassword)} 
-                      className="absolute right-2 top-2 cursor-pointer"
+                      className="absolute right-1 top-2 cursor-pointer"
                     >
                       {showPassword ? <FaEyeSlash /> : <FaEye />}
                     </span>
                   </div>
                 </label>
               </div>
-              <button type="submit" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+              <button type="submit" className=" mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
                 Register
               </button>
             </form>
