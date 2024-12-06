@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='bg-red-100 full-screen'>
+    <div className=' full-screen'>
 
 
       <div className="product-list flex flex-Col grid grid-cols-3 gap-2 p-4 ">

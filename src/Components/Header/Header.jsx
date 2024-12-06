@@ -7,7 +7,7 @@ const Header = () => {
     const { toggleTheme } = useTheme(); // Get the toggleTheme function
 
     return (
-        <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+        <header className="flex justify-between items-center p-4 bg-gray-500 text-white">
             <div className="flex items-center">
                 <img
                     src="https://static.vecteezy.com/system/resources/previews/008/296/267/non_2x/colorful-swirl-logo-design-concept-illustration-vector.jpg"

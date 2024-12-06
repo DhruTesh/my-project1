@@ -8,6 +8,6 @@ body.light {
 }
 
 body.dark {
-    @apply bg-gray-900 text-white;
+    @apply bg-gray-900 text-red-900;
 }
 

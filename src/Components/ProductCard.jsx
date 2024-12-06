@@ -11,6 +11,7 @@ const ProductCard = ({ product }) => {
         className='w-full bg-gray-300 object-contain aspect-video '
       />
       <h3 className="product-title text-center text-xl font-bold">{product.title}</h3>
+      <p className='product-description text-center text-sm'>{product.description}</p>
       <p className="product-price text-xl font-bold">${product.price.toFixed(2)}</p>
       <button className="add-to-cart-button bg-blue-900 text-white px-4 py-4 rounded-md hover:bg-violet-700">
         Add to Cart</button>

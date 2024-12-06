@@ -7,14 +7,14 @@ import Home from './Components/Home';
 import AboutUs from './Components/AboutUS';
 import Services from './Components/Services';
 import Login from './Components/Login';
-import ThemeToggle from './Components/ThemeToggle';
+
 
 // Main App Component
 const App = () => {
   return (
     <Router>
       <Header />
-      <ThemeToggle /> 
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
